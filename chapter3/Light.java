@@ -1,3 +1,5 @@
+package chapter3;
+
 public class Light {
     public static void main(String[] args) {
         long lightSpeed = 300000;

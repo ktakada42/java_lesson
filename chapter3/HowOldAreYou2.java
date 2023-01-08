@@ -1,3 +1,5 @@
+package chapter3;
+
 import java.io.*;
 
 public class HowOldAreYou2 {

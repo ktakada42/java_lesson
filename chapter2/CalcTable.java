@@ -1,3 +1,5 @@
+package chapter2;
+
 public class CalcTable {
 	public static void main(String[] args) {
 		System.out.println("0 x 0 = " + 0 * 0);

@@ -1,24 +1,23 @@
+package chapter5;
+
 import java.io.*;
 
-public class Drink3 {
+public class Drink4 {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
             System.out.println("飲み物は何が好きですか?");
-            System.out.println("1 オレンジジュース(a)");
-            System.out.println("2 コーヒー(b)");
-            System.out.println("3 どちらでもない(c)");
-            System.out.println("1, 2, 3のどれかを選んでください(a, b, cでも選べます)。");
+            System.out.println("オレンジジュース(orange)");
+            System.out.println("コーヒー(coffee)");
+            System.out.println("どちらでもない(other)");
+            System.out.println("orange, coffee, otherのどれかを選んでください。");
             String line = reader.readLine();
-            char c = line.charAt(0);
-            switch (c) {
-                case '1':
-                case 'a':
+            switch (line) {
+                case "orange":
                     System.out.println("オレンジジュースです。");
                     break ;
 
-                case '2':
-                case 'b':
+                case "coffee":
                     System.out.println("コーヒーです。");
                     break ;
 

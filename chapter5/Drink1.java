@@ -1,3 +1,5 @@
+package chapter5;
+
 import java.io.*;
 
 public class Drink1 {

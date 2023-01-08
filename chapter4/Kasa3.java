@@ -1,6 +1,10 @@
-import java.io.*;
+package chapter4;
 
-public class Kasa2 {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Kasa3 {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
@@ -8,7 +12,7 @@ public class Kasa2 {
             String line = reader.readLine();
             int n = Integer.parseInt(line);
             System.out.println("降水確率は" + n + "%です。");
-            if (n > 100) {
+            if (n < 0 || 100 < n) {
                 System.out.println("降水確率は0 ~ 100の間ですよ。");
             } else if (n >= 50) {
                 System.out.println("傘を忘れずにね。");
